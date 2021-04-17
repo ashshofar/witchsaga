@@ -1,10 +1,10 @@
 <?php
-    include 'Fibonacci.php';
-    $fibonacci = new Fibonacci();
+    include 'Calculate.php';
+    $calculate = new Calculate();
 
     $results = NULL;
     if(isset($_POST['submit'])) {
-        $results = $fibonacci->postData($_POST);
+        $results = $calculate->postData($_POST);
     }
 
 ?>

@@ -95,6 +95,12 @@ class Fibonacci
                 $result['message'] = 'Year of death cannot be smaller or equal than Age of death';
                 $result['average'] = -1;
             }
+
+            if ($p['death'] - $p['age'] > 35) {
+                $result['status'] = FALSE;
+                $result['message'] = 'Cannot execute more than 35 recursive process';
+                $result['average'] = -1;
+            }
         }
 
         return $result;
